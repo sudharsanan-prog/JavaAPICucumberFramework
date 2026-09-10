@@ -26,7 +26,8 @@
                             <projectName>JavaAPICucumberFramework</projectName>
                             <outputDirectory>${project.build.directory}/cucumber-html-reports</outputDirectory>
                             <jsonFiles>
-                                <param>jsonReports/*.json</param>
+                                <!-- Point directly to the subfolder where your runner saves it -->
+                                <param>jsonReports/cucumber-report.json</param>
                             </jsonFiles>
                         </configuration>
                     </execution>
