@@ -23,11 +23,10 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>JavaAPICucumberFramework</projectName>
+                            <projectName>APIFramework</projectName>
                             <outputDirectory>${project.build.directory}/cucumber-html-reports</outputDirectory>
                             <jsonFiles>
-                                <!-- Point directly to the subfolder where your runner saves it -->
-                                <param>jsonReports/cucumber-report.json</param>
+                                <param>**/jsonReports/*.json</param>
                             </jsonFiles>
                         </configuration>
                     </execution>
