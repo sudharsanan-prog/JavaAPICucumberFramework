@@ -18,20 +18,16 @@
                 <executions>
                     <execution>
                         <id>execution</id>
-                        <phase>verify</phase> <!-- Typically runs during the verify phase -->
+                        <phase>verify</phase>
                         <goals>
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>My Automation Project</projectName>
+                            <projectName>JavaAPICucumberFramework</projectName>
                             <outputDirectory>${project.build.directory}/cucumber-html-reports</outputDirectory>
                             <jsonFiles>
-                                <param>**/cucumber.json</param>
+                                <param>jsonReports/*.json</param>
                             </jsonFiles>
-                            <buildNumber>1</buildNumber>
-                            <classificationFiles>
-                                <param>classifications.properties</param>
-                            </classificationFiles>
                         </configuration>
                     </execution>
                 </executions>

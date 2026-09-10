@@ -1,4 +1,5 @@
 resources\APIResources.class
+cucumber\Options\HtmlReportGenerator.class
 pojo\AddPlace.class
 stepDefinition\Hooks.class
 resources\TestDataBuild.class
